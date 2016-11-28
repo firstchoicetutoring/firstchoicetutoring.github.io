@@ -136,7 +136,7 @@ body {
   color: #9B9B9B;
 }
 .content {
-  width: 690px;
+  width: 720px;
   display: block;
   float: none;
   margin: 0 auto;
@@ -211,7 +211,7 @@ body {
   margin-top: 20px;
 }
 .content .blocks .block {
-  width: 305px;
+  width: 320px;
   vertical-align: top;
   margin-right: 20px;
   font-family: Charter;
@@ -237,4 +237,55 @@ body {
   font-size: 14px;
   line-height: 23px;
   color: #4B4B4B;
+}
+@media screen and (max-width: 750px) {
+  .content {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 645px;
+  }
+  .content .blocks {
+    display: block;
+    margin: 0 auto;
+  }
+  .content .blocks .block {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .quote-bar .quote {
+    font-size: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content {
+    margin-top: 775px;
+  }
+  .quote-bar .quote {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav .icon {
+    left: 15px !important;
+  }
+  .nav ul {
+    margin-right: 10px !important;
+  }
+  .nav ul li {
+    font-size: 17px;
+  }
+  .content h2 {
+    font-size: 26px;
+    width: 90%;
+  }
+  .content .blocks .block {
+    width: 90%;
+  }
 }
