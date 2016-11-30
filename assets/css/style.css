@@ -143,7 +143,7 @@ body {
 .header .header-text .button.secondary {
   box-sizing: border-box;
   background: none;
-  font-weight: 400;
+  font-weight: 500;
   border: 2px solid #fff;
 }
 .page-header {
@@ -207,9 +207,10 @@ body {
   width: 420px;
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 25px;
   font-weight: 400;
-  line-height: 90px;
+  line-height: 45px;
+  padding-bottom: 20px;
 }
 .content h3 {
   text-transform: uppercase;
@@ -288,6 +289,13 @@ body {
   display: inline-block;
   width: 119px;
 }
+.content ul {
+  font-family: 'Charter';
+  font-size: 15px;
+  line-height: 23px;
+  color: #4B4B4B;
+  margin-left: -10px;
+}
 .content .blocks {
   margin-left: 30px;
   margin-top: 20px;
@@ -298,6 +306,18 @@ body {
   margin-right: 20px;
   font-family: 'Charter';
   display: inline-block;
+}
+.content .headshot {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  background-color: #afafaf;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s all ease;
 }
 .content .profiles {
   width: 620px;
@@ -316,23 +336,23 @@ body {
   font-family: Avenir Next;
   text-align: center;
 }
-.content .profiles .profile .headshot {
-  display: block;
-  margin: 0 auto;
-  border-radius: 100%;
-  width: 125px;
-  height: 125px;
-  background-color: #afafaf;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .content .profiles .profile .label {
   font-size: 20px;
   margin-top: 20px;
 }
+.content .profiles .profile .label a {
+  text-decoration: none;
+  color: #000;
+}
+.content .profiles .profile .label a:hover {
+  color: #58A5EF;
+}
 .page-content {
-  margin-top: 370px !important;
+  width: 600px;
+  margin-top: 380px !important;
+}
+.profile-content {
+  width: 650px;
 }
 .footer,
 .page-wrap:after {
@@ -398,6 +418,10 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  .page-content {
+    width: 80%;
+    margin: 0 auto;
   }
   .quote-bar .quote {
     font-size: 18px;

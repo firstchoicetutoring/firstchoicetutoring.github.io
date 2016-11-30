@@ -94,7 +94,7 @@
     <div class="content">
       <h2 id="request"> Request a Consultation </h2>
 
-      <form>
+      <form action="https://formspree.io/yourfirstchoicetutoring@gmail.com" method="POST">
         <input type="text" placeholder="you@email.com"></input>
         <input type="text" id="first" placeholder="First Name"></input>
         <input type="text" id="last" placeholder="Last Name"></input>
@@ -153,11 +153,15 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"
           type="text/javascript"></script>
   <script>
-  $("#schedule").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#request").offset().top},
-          'slow');
+
+  $('document').ready(function() {
+    $("#schedule").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#request").offset().top},
+            'slow');
+    });
   });
+
   </script>
 
   </body>
