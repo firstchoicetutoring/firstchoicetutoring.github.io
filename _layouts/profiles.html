@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+{% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="content page-content">
+      <div class="profiles">
+        {% assign profiles = site.profiles | sort: 'order' %}
+        {% for profile in profiles %}
+        <div class="profile">
+          <div class="headshot" style="background-image: url('{{ profile.headshot }}')"></div>
+          <div class="label">{{ profile.name }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
