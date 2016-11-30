@@ -166,14 +166,13 @@ body {
   .header-text {
     h1 {
       width: 100%;
-      height: 70px;
-      line-height: 70px;
+      height: 100px;
       display: block;
       position: absolute;
       z-index: 1;
       text-align: center;
-      top: 50%;
-      margin-top: -35px;
+      top: 55%;
+      margin-top: -50px;
       font-family: 'Avenir Next';
       font-size: 55px;
       font-weight: 500;
@@ -315,15 +314,18 @@ body {
 
   .profiles {
     @profile-width: 125px;
-    @profile-margin: 27px;
-    width: (@profile-width * 3) + (@profile-margin * 7);
+    @profile-side-margin: 35px;
+    width: (@profile-width * 3) + (@profile-side-margin * 7);
     display: block;
     margin: 0 auto;
     text-align: center;
     .profile {
       vertical-align: top;
       width: @profile-width;
-      margin: @profile-margin;
+      margin-left: @profile-side-margin;
+      margin-right: @profile-side-margin;
+      margin-top: 25px;
+      margin-bottom: 25px;
       display: inline-block;
       font-family: Avenir Next;
       text-align: center;
@@ -410,6 +412,15 @@ body {
         width: 80%;
       }
     }
+    .profiles {
+      width: 80%;
+      .profile {
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
   }
   .quote-bar {
     .quote {
@@ -449,6 +460,7 @@ body {
       }
     }
   }
+
   .content {
     h2 {
       font-size: 26px;
@@ -459,5 +471,26 @@ body {
         width: 90%;
       }
     }
+    .profiles {
+      .profile {
+        width: 100%;
+        .headshot {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .page-header {
+    .header-text {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .page-content {
+    width: 80%;
   }
 }
