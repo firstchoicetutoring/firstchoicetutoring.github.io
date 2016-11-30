@@ -16,7 +16,7 @@
 @page-header-height: 350px;
 @footer-height: 200px;
 
-@grid: url("/firstchoice/assets/images/grid.png");
+@grid: url("/assets/images/grid.png");
 @grid-size: 60px 60px;
 
 body {
@@ -230,8 +230,8 @@ body {
     margin: 0 auto;
     margin-top: 25px;
     font-weight: 400;
-    line-height: 45px;
-    padding-bottom: 20px;
+    line-height: 43px;
+    padding-bottom: 17px;
   }
   h3 {
     text-transform: uppercase;
@@ -247,6 +247,7 @@ body {
     font-size: 17px;
     font-weight: normal;
     margin-bottom: 0px;
+    margin-top: 20px;
   }
   p {
     margin-top: 9px;
@@ -455,6 +456,15 @@ body {
       margin-right: 12px;
     }
   }
+
+  .nav {
+    ul {
+      li {
+        font-size: 17px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -475,14 +485,45 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .nav {
-    .icon {
-      left: 15px !important;
+  .header {
+    .header-text {
+      top: 9em;
+      left: 8vw;
     }
-    ul {
-      margin-right: 10px !important;
-      li {
-        font-size: 17px;
+  }
+
+  .header, .page-header {
+    .nav {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      a {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 13px;
+        .icon {
+          display: block;
+          margin: 0 auto;
+          left: 0 !important;
+          position: relative;
+        }
+      }
+      ul {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 0px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        li {
+          margin: 6px;
+          padding: 0px;
+          font-size: 17px;
+        }
       }
     }
   }
@@ -506,17 +547,52 @@ body {
         }
       }
     }
+
+    form {
+      width: 90%;
+      input {
+        width: 90%;
+      }
+      #first, #last {
+        width: 38%; 
+      }
+    }
   }
 
   .page-header {
     .header-text {
       h1 {
         font-size: 35px;
+        top: 6.3em;
       }
     }
   }
 
   .page-content {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header {
+    .header-text {
+      top: 10.5em;
+      h1 {
+        font-size: 43px;
+      }
+      h2 {
+        font-size: 33px;
+      }
+      .button {
+        padding: 6px;
+      }
+    }
+  }
+  .nav {
+    ul {
+      li {
+        margin: 3px !important;
+      }
+    }
   }
 }
