@@ -6,7 +6,7 @@
 }
 
 @font-family {
-  src: url('/firstchoice/assets/fonts/Charter.ttc');
+  src: url('/assets/fonts/Charter.ttc');
   font-family: 'Charter';
 }
 
@@ -16,7 +16,7 @@
 @page-header-height: 350px;
 @footer-height: 200px;
 
-@grid: url("/firstchoice/assets/images/grid.png");
+@grid: url("/assets/images/grid.png");
 @grid-size: 60px 60px;
 
 body {
@@ -219,6 +219,14 @@ body {
   margin-top: @header-height + 120px;
   margin-bottom: 100px;
 
+  img {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+  }
+  a, a:visited {
+    color: @ui-blue;
+  }
   h2 {
     font-family: 'Avenir Next';
     color: #000;

@@ -3,7 +3,7 @@
   font-family: 'Avenir Next';
 }
 @font-family {
-  src: url('/firstchoice/assets/fonts/Charter.ttc');
+  src: url('/assets/fonts/Charter.ttc');
   font-family: 'Charter';
 }
 body {
@@ -164,7 +164,7 @@ body {
   color: white;
 }
 .quote-bar {
-  background: url("/firstchoice/assets/images/grid.png");
+  background: url("/assets/images/grid.png");
   background-size: 60px 60px;
   font-family: 'Charter';
   width: 100%;
@@ -197,6 +197,15 @@ body {
   margin: 0 auto;
   margin-top: 620px;
   margin-bottom: 100px;
+}
+.content img {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+}
+.content a,
+.content a:visited {
+  color: #58A5EF;
 }
 .content h2 {
   font-family: 'Avenir Next';
@@ -360,7 +369,7 @@ body {
   height: 205px;
 }
 .footer {
-  background: url("/firstchoice/assets/images/grid.png");
+  background: url("/assets/images/grid.png");
   background-size: 60px 60px;
   padding-top: 5px;
 }
