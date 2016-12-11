@@ -198,6 +198,27 @@ body {
   margin-top: 620px;
   margin-bottom: 100px;
 }
+.content .ad {
+  background: url("/assets/images/grid.png");
+  background-size: 60px 60px;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+}
+.content .ad h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: none;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  line-height: 30px;
+}
+.content .ad h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Charter';
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
 .content img {
   display: block;
   margin: 10px auto;
