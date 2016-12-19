@@ -272,7 +272,8 @@ body {
   margin-top: 25px;
   text-align: center;
 }
-.content form input {
+.content form input,
+.content form textarea {
   width: 276px;
   background: #FAFAFA;
   padding: 10px;
