@@ -40,7 +40,7 @@ body {
   top: 20px;
   font-size: 20px;
   z-index: 1;
-  text-align: right;
+  text-align: left;
 }
 .header .nav .icon,
 .page-header .nav .icon {
@@ -56,7 +56,7 @@ body {
   left: 0;
   padding-left: 0;
   margin: 0;
-  margin-right: 30px;
+  margin-left: 100px;
   display: block;
 }
 .header .nav ul li.selected,
@@ -75,6 +75,14 @@ body {
 .header .nav ul li a,
 .page-header .nav ul li a {
   color: #fff;
+  text-decoration: none;
+}
+.header .nav a#phone,
+.page-header .nav a#phone {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 50px;
   text-decoration: none;
 }
 .header .tint,
@@ -465,6 +473,10 @@ body {
   .nav ul li {
     font-size: 17px;
   }
+  .nav a#phone {
+    left: 105px;
+    margin-top: 37px;
+  }
 }
 @media screen and (max-width: 600px) {
   .content {
@@ -519,6 +531,14 @@ body {
     margin: 6px;
     padding: 0px;
     font-size: 17px;
+  }
+  .header a#phone,
+  .page-header a#phone {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 13px;
+    margin-top: 75px;
   }
   .content h2 {
     font-size: 26px;
