@@ -206,6 +206,9 @@ body {
   margin-top: 620px;
   margin-bottom: 100px;
 }
+.content .edhc {
+  width: 100px;
+}
 .content .ad {
   background: url("/assets/images/grid.png");
   background-size: 60px 60px;
